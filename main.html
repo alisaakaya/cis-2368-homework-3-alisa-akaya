@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Escape Rooms</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Social Icons Font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            margin-bottom: 30px;
+        }
+        .room-card {
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+        .room-card:hover {
+            transform: translateY(-5px);
+        }
+        .social-icon {
+            font-size: 24px;
+            margin: 0 15px;
+            color: #212529;
+        }
+        .social-icon:hover {
+            color: #6c757d;
+        }
+        footer {
+            padding: 30px 0;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Menu (1) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Enigma Escape Rooms</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Book Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (2) -->
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Challenge Your Mind</h1>
+            <p class="lead">Can you escape in time?</p>
+            <a href="#booking" class="btn btn-primary btn-lg mt-3">Book Your Adventure</a>
+        </div>
+    </section>
+
+    <!-- Escape Room Info (4) -->
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">Welcome to Enigma Escape Rooms</h2>
+                <p class="lead text-center">
+                    At Enigma Escape Rooms, we offer immersive, heart-pounding adventures designed to challenge your wits and teamwork. Each meticulously crafted room presents unique puzzles, hidden clues, and intricate storylines that will transport you to another world. Whether you're a seasoned escape artist or first-time adventurer, our variety of difficulty levels ensures everyone can enjoy the thrill of the escape. Gather your friends, family, or colleagues and put your problem-solving skills to the test as the clock ticks down. You have 60 minutes to unravel the mysteries, discover the secrets, and find your way out. Are you ready for the challenge?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Showcases with Images (2) -->
+    <section class="container mb-5">
+        <h2 class="text-center mb-4">Our Escape Rooms</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card room-card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Haunted Mansion Room">
+                    <div class="card-body">
+                        <h5 class="card-title">The Haunted Mansion</h5>
+                        <p class="card-text">Navigate through a Victorian mansion with a dark history and escape the supernatural forces within.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Difficulty: Hard</span>
+                            <span><i class="far fa-clock"></i> 60 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card room-card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Bank Heist Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Bank Heist</h5>
+                        <p class="card-text">Pull off the perfect heist by cracking the vault and escaping before the authorities arrive.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark">Difficulty: Medium</span>
+                            <span><i class="far fa-clock"></i> 60 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card room-card">
+                    <img src="/api/placeholder/400/300" class="card-img-top" alt="Space Station Room">
+                    <div class="card-body">
+                        <h5 class="card-title">Space Station Omega</h5>
+                        <p class="card-text">Fix the malfunctioning space station systems and launch the escape pod before oxygen runs out.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-success">Difficulty: Easy</span>
+                            <span><i class="far fa-clock"></i> 60 minutes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form (3) -->
+    <section id="booking" class="container mb-5 py-4 bg-light rounded">
+        <h2 class="text-center mb-4">Book Your Escape Adventure</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="reservationDate" class="form-label">Date of Reservation</label>
+                        <input type="date" class="form-control" id="reservationDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="roomSelect" class="form-label">Select an Escape Room</label>
+                        <select class="form-select" id="roomSelect" required>
+                            <option value="" selected disabled>Choose a room...</option>
+                            <option value="haunted">The Haunted Mansion</option>
+                            <option value="heist">Bank Heist</option>
+                            <option value="space">Space Station Omega</option>
+                            <option value="lab">The Mad Scientist's Lab</option>
+                            <option value="tomb">Ancient Tomb Raider</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="timeSelect" class="form-label">Select Time Slot</label>
+                        <select class="form-select" id="timeSelect" required>
+                            <option value="" selected disabled>Choose a time...</option>
+                            <option value="10am">10:00 AM</option>
+                            <option value="12pm">12:00 PM</option>
+                            <option value="2pm">2:00 PM</option>
+                            <option value="4pm">4:00 PM</option>
+                            <option value="6pm">6:00 PM</option>
+                            <option value="8pm">8:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="participants" class="form-label">Number of Participants</label>
+                        <select class="form-select" id="participants" required>
+                            <option value="" selected disabled>Select group size...</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                        </select>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Contact Info, Social Media (5) -->
+    <footer class="text-center">
+        <div class="container">
+            <h3 class="mb-3">Contact Us</h3>
+            <p class="mb-3">123 Mystery Street, Puzzle City, PC 12345<br>
+            Phone: (555) 123-4567<br>
+            Email: info@enigmaescaperooms.com</p>
+            
+            <div class="mb-4">
+                <!-- Social Media Icons -->
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+            <p class="mb-0">&copy; 2025 Enigma Escape Rooms. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
